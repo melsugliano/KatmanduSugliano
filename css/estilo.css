@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr auto;
+    grid-template-areas: 
+    "header header header"
+    "menu menu menu"
+    "pizzas hamburguesas milanesas"
+    "sandwiches empanadas papasFritas"
+    "footer footer footer";
+}
+
+header{
+    background-color: rgb(56, 96, 76);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+/*navegador*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    list-style-type: none;
+    text-decoration: none;    
+    padding: 10px;
+    display: inline-block;
+}
+
+.logoGrande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*catalogo de comida*/
+
+.menu{
+    grid-area: menu; 
+}
+
+.pizzas{
+    grid-area: pizzas;
+    background-image: url("/multimedia/food/Pizzas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguesas{
+    grid-area: hamburguesas;
+    background-image: url("/multimedia/food/Hamburguesas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.milanesas{
+    grid-area: milanesas;
+    background-image: url("/multimedia/food/Milanesas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sandwiches{
+    grid-area: sandwiches;
+    background-image: url("/multimedia/food/Sandwiches.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empanadas{
+    grid-area: empanadas;
+    background-image: url("/multimedia/food/Empanadas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.papasFritas{
+    grid-area: papasFritas;
+    background-image: url("/multimedia/food/Papas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fondos*/
+
+.fondo1{
+    background-image: url("/multimedia/backgrounds/Fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+/*Titulos principales*/
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    padding: 30px;    
+    background-color: rgb(39, 39, 39);
+}
+
+/*formulario contactos*/
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(65, 62, 62); 
+    font-weight: 500;
+    color: white;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+form div{
+    padding: 1rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+}
+
+input, textarea{
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    padding: 1rem;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgb(51, 51, 51);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;  
+}
+
+.footerText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: white;
+
+}
+
+.redes{
+    padding-right: 15px;
+}
+
+.fb:hover{
+    opacity: 0.5;
+}
+
+.ig:hover{
+    opacity: 0.5;
+}
+
+@media screen and (max-width:900px){
+.contenedor{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr auto;
+    grid-template-areas: 
+    "header header "
+    "menu menu"
+    "pizzas hamburguesas" 
+    "milanesas sandwiches" 
+    "empanadas papasFritas"
+    "footer footer ";
+}
+}
+
+@media screen and (max-width:700px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr 1fr 1fr 1fr 1fr 1fr auto;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "pizzas" 
+        "hamburguesas" 
+        "milanesas" 
+        "sandwiches" 
+        "empanadas" 
+        "papasFritas"
+        "footer";
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
