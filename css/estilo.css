@@ -96,7 +96,7 @@ nav ul li:hover{
 
 .milanesas{
     grid-area: milanesas;
-    background-image: url("/multimedia/food/Milanesas.png");
+    background-image: url("multimedia/food/Milanesas.png");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -111,7 +111,7 @@ nav ul li:hover{
 
 .sandwiches{
     grid-area: sandwiches;
-    background-image: url("/multimedia/food/Sandwiches.png");
+    background-image: url("multimedia/food/Sandwiches.png");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -125,7 +125,7 @@ nav ul li:hover{
 }
 .empanadas{
     grid-area: empanadas;
-    background-image: url("/multimedia/food/Empanadas.png");
+    background-image: url("multimedia/food/Empanadas.png");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -140,7 +140,7 @@ nav ul li:hover{
 
 .papasFritas{
     grid-area: papasFritas;
-    background-image: url("/multimedia/food/Papas.png");
+    background-image: url("multimedia/food/Papas.png");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -188,7 +188,7 @@ nav ul li:hover{
 /*fondos*/
 
 .fondo1{
-    background-image: url("/multimedia/backgrounds/Fondo1.jpg");
+    background-image: url("multimedia/backgrounds/Fondo1.jpg");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
