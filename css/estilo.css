@@ -45,6 +45,13 @@ nav ul li{
     display: inline-block;
 }
 
+/*animación navegador*/
+
+nav ul li:hover{
+    background-color: rgb(47, 84, 66);
+    border-radius: 5%;
+}
+
 .logoGrande{
     display: flex;
     justify-content: center;
@@ -144,6 +151,38 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*ANIMACIONES catalogo de comida*/
+
+.pizzas:hover{
+    background-color: rgb(32, 32, 32); 
+    font-size: 1.5rem;
+}
+
+.hamburguesas:hover{
+    background-color: rgb(32, 32, 32); 
+    font-size: 1.5rem;
+}
+
+.milanesas:hover{
+    background-color: rgb(32, 32, 32); 
+    font-size: 1.5rem;
+}
+
+.sandwiches:hover{
+    background-color: rgb(32, 32, 32); 
+    font-size: 1.5rem;
+}
+
+.empanadas:hover{
+    background-color: rgb(32, 32, 32); 
+    font-size: 1.5rem;
+}
+
+.papasFritas:hover{
+    background-color: rgb(32, 32, 32); 
+    font-size: 1.5rem;
 }
 
 /*fondos*/
