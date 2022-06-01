@@ -12,7 +12,7 @@
     "header header header"
     "menu menu menu"
     "pizzas hamburguesas milanesas"
-    "sandwiches empanadas papasFritas"
+    "sandwiches papasFritas empanadas"
     "footer footer footer";
 }
 
@@ -127,10 +127,11 @@ nav ul li:hover{
     justify-content: center;
     align-items: center;
 }
-.empanadas{
-    grid-area: empanadas;
+
+.papasFritas{
+    grid-area: papasFritas;
     background-image: 
-    url("/multimedia/Empanadas.png");
+    url("/multimedia/Papas.png");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -143,10 +144,10 @@ nav ul li:hover{
     align-items: center;
 }
 
-.papasFritas{
-    grid-area: papasFritas;
+.empanadas{
+    grid-area: empanadas;
     background-image: 
-    url("/multimedia/Papas.png");
+    url("/multimedia/Empanadas.png");
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
