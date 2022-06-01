@@ -201,6 +201,14 @@ nav ul li:hover{
     background-position: center;
 }
 
+.fondo3{
+    background-image: 
+    url("/multimedia/Fondo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
 /*Titulos principales*/
 
 h1{
@@ -220,10 +228,12 @@ form{
     background-color: rgb(65, 62, 62); 
     font-weight: 500;
     color: white;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 40px;
-    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
     text-align: center;
 }
 
