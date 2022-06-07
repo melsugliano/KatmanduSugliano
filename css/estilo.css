@@ -1,12 +1,4 @@
-* {
-  margin: 0;
-  padding: 0; }
-
-/*eliminar margenes predeterminados boopstrap*/
-.nomargin {
-  margin: 0; }
-
-/*Navegador*/
+/*Header*/
 header {
   background-color: #38604c;
   display: flex;
@@ -15,6 +7,7 @@ header {
   align-items: center;
   grid-area: header; }
 
+/*Navegador*/
 nav {
   display: flex;
   flex-direction: row;
@@ -30,6 +23,225 @@ nav ul li {
   nav ul li:hover {
     background-color: #2f5442;
     border-radius: 5%; }
+
+/*GRILLA catalogo de comida*/
+.menu {
+  grid-area: menu;
+  color: white; }
+
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto repeat(8, 1fr) auto;
+  grid-template-areas: "header header header" "menu menu menu" "pizzas hamburguesas milanesas" "sandwiches papasFritas empanadas" "pizzas1 pizzas1 pizzas1" "hamburguesas1 hamburguesas1 hamburguesas1" "milanesas1 milanesas1 milanesas1" "sandwiches1 sandwiches1 sandwiches1" "papasFritas1 papasFritas1 papasFritas1" "empanadas1 empanadas1 empanadas1" "footer footer footer"; }
+
+.pizzas {
+  grid-area: pizzas;
+  background-image: url("/multimedia/Pizzas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .pizzas:hover {
+    background-color: #202020; }
+
+.hamburguesas {
+  grid-area: hamburguesas;
+  background-image: url("/multimedia/Hamburguesas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hamburguesas:hover {
+    background-color: #202020; }
+
+.milanesas {
+  grid-area: milanesas;
+  background-image: url("/multimedia/Milanesas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .milanesas:hover {
+    background-color: #202020; }
+
+.sandwiches {
+  grid-area: sandwiches;
+  background-image: url("/multimedia/Sandwiches.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sandwiches:hover {
+    background-color: #202020; }
+
+.papasFritas {
+  grid-area: papasFritas;
+  background-image: url("/multimedia/Papas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .papasFritas:hover {
+    background-color: #202020; }
+
+.empanadas {
+  grid-area: empanadas;
+  background-image: url("/multimedia/Empanadas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .empanadas:hover {
+    background-color: #202020; }
+
+.pizzas1 {
+  background-color: #c5a16f;
+  grid-area: pizzas1;
+  background-image: url("/multimedia/Pizzas.png"); }
+
+.hamburguesas1 {
+  background-color: #333333;
+  grid-area: hamburguesas1;
+  background-image: url("/multimedia/Hamburguesas.png"); }
+
+.milanesas1 {
+  background-color: #2f5442;
+  grid-area: milanesas1;
+  background-image: url("/multimedia/Hamburguesas.png"); }
+
+.sandwiches1 {
+  background-color: #c5a16f;
+  grid-area: sandwiches1;
+  background-image: url("/multimedia/Sandwiches.png"); }
+
+.papasFritas1 {
+  background-color: #333333;
+  grid-area: papasFritas1;
+  background-image: url("/multimedia/Papas.png"); }
+
+.empanadas1 {
+  background-color: #2f5442;
+  grid-area: empanadas1;
+  background-image: url("/multimedia/Empanadas.png"); }
+
+.contenedor2 {
+  background-image: url("/multimedia/Fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5% 10% 5% 10%; }
+
+form {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #413e3e;
+  font-weight: 500;
+  color: white;
+  text-align: center; }
+
+form div {
+  text-align: start;
+  display: flex;
+  flex-direction: column; }
+
+legend {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: white;
+  text-align: center; }
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  padding: 1rem; }
+
+@media screen and (max-width: 900px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto repeat(9, 1fr) auto;
+    grid-template-areas: "header header" "menu menu" "pizzas hamburguesas"  "milanesas sandwiches"  "papasFritas empanadas" "pizzas1 pizzas1" "hamburguesas1 hamburguesas1" "milanesas1 milanesas1" "sandwiches1 sandwiches1" "empanadas1 empanadas1" "papasFritas1 papasFritas1" "footer footer "; }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  h6 {
+    font-size: 0.9rem; }
+  .footerText {
+    font-size: 0.6rem; } }
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto repeat(12, 1fr) auto;
+    grid-template-areas: "header" "menu" "pizzas"  "hamburguesas"  "milanesas"  "sandwiches"  "empanadas"  "papasFritas" "pizzas1" "hamburguesas1" "milanesas1" "sandwiches1" "empanadas1" "papasFritas1" "footer"; }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  h6 {
+    font-size: 0.8rem; }
+  .footerText {
+    font-size: 0.5rem; } }
+
+footer {
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: footer; }
+
+.footerInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: white; }
+
+.footerText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: white; }
+
+/*ANIMACIONES footer*/
+.fb:hover {
+  opacity: 0.5; }
+
+.ig:hover {
+  opacity: 0.5; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*eliminar margenes predeterminados boopstrap*/
+.nomargin {
+  margin: 0; }
 
 /*INICIO*/
 .contLogoGrande {
@@ -62,210 +274,3 @@ h2, .titulosMonserrat2 {
   font-weight: 500;
   color: white;
   margin: 0; }
-
-/*GRILLA catalogo de comida*/
-.menu {
-  grid-area: menu;
-  color: white; }
-
-.contenedor {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto repeat(8, 1fr) auto;
-  grid-template-areas: "header header header" "menu menu menu" "pizzas hamburguesas milanesas" "sandwiches papasFritas empanadas" "pizzas1 pizzas1 pizzas1" "hamburguesas1 hamburguesas1 hamburguesas1" "milanesas1 milanesas1 milanesas1" "sandwiches1 sandwiches1 sandwiches1" "papasFritas1 papasFritas1 papasFritas1" "empanadas1 empanadas1 empanadas1" "footer footer footer"; }
-
-.pizzas {
-  grid-area: pizzas;
-  background-image: url("/multimedia/Pizzas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.hamburguesas {
-  grid-area: hamburguesas;
-  background-image: url("/multimedia/Hamburguesas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.milanesas {
-  grid-area: milanesas;
-  background-image: url("/multimedia/Milanesas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.sandwiches {
-  grid-area: sandwiches;
-  background-image: url("/multimedia/Sandwiches.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.papasFritas {
-  grid-area: papasFritas;
-  background-image: url("/multimedia/Papas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.empanadas {
-  grid-area: empanadas;
-  background-image: url("/multimedia/Empanadas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.pizzas1 {
-  background-color: #c5a16f;
-  grid-area: pizzas1;
-  background-image: url("/multimedia/Pizzas.png"); }
-
-.hamburguesas1 {
-  background-color: #333333;
-  grid-area: hamburguesas1;
-  background-image: url("/multimedia/Hamburguesas.png"); }
-
-.milanesas1 {
-  background-color: #2f5442;
-  grid-area: milanesas1;
-  background-image: url("/multimedia/Hamburguesas.png"); }
-
-.sandwiches1 {
-  background-color: #c5a16f;
-  grid-area: sandwiches1;
-  background-image: url("/multimedia/Sandwiches.png"); }
-
-.papasFritas1 {
-  background-color: #333333;
-  grid-area: papasFritas1;
-  background-image: url("/multimedia/Papas.png"); }
-
-.empanadas1 {
-  background-color: #2f5442;
-  grid-area: empanadas1;
-  background-image: url("/multimedia/Empanadas.png"); }
-
-/*ANIMACIONES catalogo de comida*/
-.pizzas:hover, .hamburguesas:hover, .milanesas:hover, .sandwiches:hover, .empanadas:hover, .papasFritas:hover {
-  background-color: #202020;
-  font-size: 2.5rem; }
-
-/*Formulario*/
-.contenedor2 {
-  background-image: url("/multimedia/Fondo1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 5% 10% 5% 10%; }
-
-form {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #413e3e;
-  font-weight: 500;
-  color: white;
-  text-align: center; }
-
-form div {
-  text-align: start;
-  display: flex;
-  flex-direction: column; }
-
-legend {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
-  color: white;
-  text-align: center; }
-
-input, textarea {
-  font-family: 'Montserrat', sans-serif;
-  color: grey;
-  padding: 1rem; }
-
-/*Footer*/
-footer {
-  background-color: #333333;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  grid-area: footer; }
-
-.footerInfo {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  color: white; }
-
-.footerText {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  color: white; }
-
-/*ANIMACIONES footer*/
-.fb:hover {
-  opacity: 0.5; }
-
-.ig:hover {
-  opacity: 0.5; }
-
-/*medias responsive*/
-@media screen and (max-width: 900px) {
-  .contenedor {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto repeat(9, 1fr) auto;
-    grid-template-areas: "header header" "menu menu" "pizzas hamburguesas"  "milanesas sandwiches"  "papasFritas empanadas" "pizzas1 pizzas1" "hamburguesas1 hamburguesas1" "milanesas1 milanesas1" "sandwiches1 sandwiches1" "empanadas1 empanadas1" "papasFritas1 papasFritas1" "footer footer "; }
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  h6 {
-    font-size: 0.9rem; }
-  .footerText {
-    font-size: 0.6rem; } }
-
-@media screen and (max-width: 700px) {
-  .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto repeat(12, 1fr) auto;
-    grid-template-areas: "header" "menu" "pizzas"  "hamburguesas"  "milanesas"  "sandwiches"  "empanadas"  "papasFritas" "pizzas1" "hamburguesas1" "milanesas1" "sandwiches1" "empanadas1" "papasFritas1" "footer"; }
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  h6 {
-    font-size: 0.8rem; }
-  .footerText {
-    font-size: 0.5rem; } }

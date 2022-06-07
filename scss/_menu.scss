@@ -1,0 +1,163 @@
+/*GRILLA catalogo de comida*/
+
+.menu{
+    grid-area: menu; 
+    color: white;
+}
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto repeat(8, 1fr) auto;
+    grid-template-areas: 
+    "header header header"
+    "menu menu menu"
+    "pizzas hamburguesas milanesas"
+    "sandwiches papasFritas empanadas"
+    "pizzas1 pizzas1 pizzas1"
+    "hamburguesas1 hamburguesas1 hamburguesas1"
+    "milanesas1 milanesas1 milanesas1"
+    "sandwiches1 sandwiches1 sandwiches1"
+    "papasFritas1 papasFritas1 papasFritas1"
+    "empanadas1 empanadas1 empanadas1"
+    "footer footer footer";
+}
+
+.pizzas{
+    grid-area: pizzas;
+    background-image: 
+    url("/multimedia/Pizzas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+}
+
+.hamburguesas{
+    grid-area: hamburguesas;
+    background-image: 
+    url("/multimedia/Hamburguesas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+}
+
+.milanesas{
+    grid-area: milanesas;
+    background-image: 
+    url("/multimedia/Milanesas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+}
+
+.sandwiches{
+    grid-area: sandwiches;
+    background-image: 
+    url("/multimedia/Sandwiches.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+}
+
+.papasFritas{
+    grid-area: papasFritas;
+    background-image: 
+    url("/multimedia/Papas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+}
+
+.empanadas{
+    grid-area: empanadas;
+    background-image: 
+    url("/multimedia/Empanadas.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+        background-color: rgb(32, 32, 32);
+    }
+}
+
+.pizzas1{
+    background-color: rgb(197, 161, 111);
+    grid-area: pizzas1;
+    background-image: url("/multimedia/Pizzas.png");
+}
+
+.hamburguesas1{
+    background-color: rgb(51, 51, 51);
+    grid-area: hamburguesas1;
+    background-image: url("/multimedia/Hamburguesas.png");
+}
+
+.milanesas1{
+    background-color: rgb(47, 84, 66);
+    grid-area: milanesas1;
+    background-image: url("/multimedia/Hamburguesas.png");
+}
+
+.sandwiches1{
+    background-color: rgb(197, 161, 111);
+    grid-area: sandwiches1;
+    background-image: url("/multimedia/Sandwiches.png");
+}
+
+.papasFritas1{
+    background-color: rgb(51, 51, 51);
+    grid-area: papasFritas1;
+    background-image: url("/multimedia/Papas.png");
+}
+
+.empanadas1{
+    background-color: rgb(47, 84, 66);
+    grid-area: empanadas1;
+    background-image: url("/multimedia/Empanadas.png");
+}

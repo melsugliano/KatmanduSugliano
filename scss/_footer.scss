@@ -1,0 +1,36 @@
+footer{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;  
+}
+
+.footerText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: white;
+}
+
+/*ANIMACIONES footer*/
+
+.fb:hover{
+    opacity: 0.5;
+}
+
+.ig:hover{
+    opacity: 0.5;
+}

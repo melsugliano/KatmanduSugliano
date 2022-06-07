@@ -1,0 +1,71 @@
+@media screen and (max-width:900px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto repeat(9, 1fr) auto;
+        grid-template-areas: 
+        "header header"
+        "menu menu"
+        "pizzas hamburguesas" 
+        "milanesas sandwiches" 
+        "papasFritas empanadas"
+        "pizzas1 pizzas1"
+        "hamburguesas1 hamburguesas1"
+        "milanesas1 milanesas1"
+        "sandwiches1 sandwiches1"
+        "empanadas1 empanadas1"
+        "papasFritas1 papasFritas1"
+        "footer footer ";
+}
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h6{
+        font-size: 0.9rem;
+    }
+
+    .footerText{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto repeat(12, 1fr) auto;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "pizzas" 
+        "hamburguesas" 
+        "milanesas" 
+        "sandwiches" 
+        "empanadas" 
+        "papasFritas"
+        "pizzas1"
+        "hamburguesas1"
+        "milanesas1"
+        "sandwiches1"
+        "empanadas1"
+        "papasFritas1"
+        "footer";
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h6{
+        font-size: 0.8rem;
+    }
+
+    .footerText{
+        font-size: 0.5rem;
+    }
+}

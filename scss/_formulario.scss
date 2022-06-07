@@ -1,0 +1,37 @@
+.contenedor2{
+    background-image: 
+    url("/multimedia/Fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+    padding: 5% 10% 5% 10%;
+}
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(65, 62, 62); 
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+}
+
+form div{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+legend{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+}
+
+textarea{
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    padding: 1rem;
+}
