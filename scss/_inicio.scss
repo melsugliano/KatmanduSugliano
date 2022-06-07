@@ -9,20 +9,13 @@
     }
 }
 
-
-
 .index{
     background-image: 
-    url("/multimedia/Fondo1.jpg");
+    url('multimedia/Fondo1.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.instagramFrames{
-    display: flex;
-    justify-content: space-around;
 }
