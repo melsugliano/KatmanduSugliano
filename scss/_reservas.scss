@@ -12,8 +12,7 @@ form{
     background-color: rgb(65, 62, 62); 
     font-weight: 500;
     color: white;
-
-
+    margin: 0% 15% 0% 15%;
 }
 
 form div{
@@ -31,4 +30,5 @@ textarea{
 .formulario2{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }

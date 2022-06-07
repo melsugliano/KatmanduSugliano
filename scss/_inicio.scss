@@ -1,0 +1,28 @@
+.contLogo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    img{
+        width: 50%;
+        padding: 10%;
+    }
+}
+
+
+
+.index{
+    background-image: 
+    url("/multimedia/Fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.instagramFrames{
+    display: flex;
+    justify-content: space-around;
+}

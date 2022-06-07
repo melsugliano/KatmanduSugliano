@@ -1,8 +1,12 @@
 @import "header";
+@import "titulos";
+@import "inicio";
+@import "eventos";
 @import "menu";
-@import "formulario";
-@import "medias";
+@import "cervezas";
+@import "reservas";
 @import "footer";
+@import "medias";
 
 *{
     margin: 0;
@@ -12,48 +16,5 @@
 /*eliminar margenes predeterminados boopstrap*/
 
 .nomargin{
-    margin: 0;
-}
-
-/*INICIO*/
-
-.logoGrande{
-    
-}
-
-.contLogoGrande{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.index{
-    background-image: 
-    url("/multimedia/Fondo1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-/*Titulos principales*/
-
-h1, .titulosMonserrat{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 200;
-    color: white;
-    text-align: center;  
-    background-color: rgb(39, 39, 39);
-    margin: 0;
-}
-
-h2, .titulosMonserrat2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    color: white;
     margin: 0;
 }
