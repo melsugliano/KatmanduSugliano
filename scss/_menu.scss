@@ -27,7 +27,7 @@
 .pizzas{
     grid-area: pizzas;
     background-image: 
-    url('multimedia/Pizzas.png');
+    url('../multimedia/Pizzas.png');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -48,7 +48,7 @@
 .hamburguesas{
     grid-area: hamburguesas;
     background-image: 
-    url('multimedia/Hamburguesas.png');
+    url('../multimedia/Hamburguesas.png');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -69,7 +69,7 @@
 .milanesas{
     grid-area: milanesas;
     background-image: 
-    url('multimedia/Milanesas.png');
+    url('../multimedia/Milanesas.png');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -90,7 +90,7 @@
 .sandwiches{
     grid-area: sandwiches;
     background-image: 
-    url('multimedia/Sandwiches.png');
+    url('../multimedia/Sandwiches.png');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -111,7 +111,7 @@
 .papasFritas{
     grid-area: papasFritas;
     background-image: 
-    url('multimedia/Papas.png');
+    url('../multimedia/Papas.png');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -132,7 +132,7 @@
 .empanadas{
     grid-area: empanadas;
     background-image: 
-    url('multimedia/Empanadas.png');
+    url('../multimedia/Empanadas.png');
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
@@ -156,7 +156,7 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-    background-image: url('multimedia/Pizzas.png');
+    background-image: url('../multimedia/Pizzas.png');
     text-align: center;
 
     ul{
@@ -175,7 +175,7 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-    background-image: url('multimedia/Hamburguesas.png');
+    background-image: url('../multimedia/Hamburguesas.png');
     text-align: center;
 
     h2{
@@ -203,7 +203,7 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-    background-image: url('multimedia/Milanesas.png');
+    background-image: url('../multimedia/Milanesas.png');
     text-align: center;
     
     ul{
@@ -227,7 +227,7 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-    background-image: url('multimedia/Sandwiches.png');
+    background-image: url('../multimedia/Sandwiches.png');
     text-align: center;
 
     h2{
@@ -255,7 +255,7 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-    background-image: url('multimedia/Papas.png');
+    background-image: url('../multimedia/Papas.png');
     text-align: center;
     
     ul{
@@ -274,7 +274,7 @@
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;
-    background-image: url('multimedia/Empanadas.png');
+    background-image: url('../multimedia/Empanadas.png');
     text-align: center;
     
     ul{
