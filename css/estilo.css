@@ -308,7 +308,8 @@ h6 {
 
 .accordion-collapse {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  align-content: center; }
 
 .accordion-body p {
   color: #333333;
