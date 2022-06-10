@@ -19,3 +19,21 @@
     display: flex;
     flex-direction: row;
 }
+
+.accordion-body{
+
+    p{
+        color: rgb(51, 51, 51);
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+
+    }
+
+    .propiedades{
+        color: rgb(197, 161, 111);
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+}

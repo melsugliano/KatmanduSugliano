@@ -1,5 +1,24 @@
 @media screen and (max-width:992px){
 
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contLogo{
+    
+        img{
+            width: 60%;
+            padding: 10% 0 10% 0;
+        }
+    }
+
+    h1, .titulosMonserrat{
+        font-size: 2rem;
+    }
+
     .contenedor{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto repeat(9, 1fr) auto;
@@ -16,12 +35,21 @@
         "empanadas1 empanadas1"
         "papasFritas1 papasFritas1"
         "footer footer ";
-}
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .contCervezas{
+
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .contenedor2{
+        padding: 5% 5% 5% 5%;
+    }
+
+    form{
+        margin: 0% 10% 0% 10%;
     }
 
     .formulario2{
@@ -36,17 +64,28 @@
     .footerText{
         font-size: 0.6rem;
     }
+}
+
+@media screen and (max-width:768px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .contLogo{
     
         img{
-            width: 60%;
-            padding: 10% 0 10% 0;
+            width: 70%;
+            padding: 40% 0 40% 0;
         }
     }
-}
 
-@media screen and (max-width:768px){
+    h1, .titulosMonserrat{
+        font-size: 1.5rem;
+    }
 
     .contenedor{
         grid-template-columns: 1fr;
@@ -69,11 +108,19 @@
         "footer";
     }
 
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .contCervezas{
+
+        p{
+            font-size: 0.8rem;
+        }
+    }
+
+    .contenedor2{
+        padding: 3% 0% 3% 0%;
+    }
+
+    form{
+        margin: 0% 3% 0% 3%;
     }
 
     .formulario2{
@@ -87,13 +134,5 @@
 
     .footerText{
         font-size: 0.5rem;
-    }
-
-    .contLogo{
-    
-        img{
-            width: 70%;
-            padding: 40% 0 40% 0;
-        }
     }
 }
