@@ -1,7 +1,7 @@
 /*Header*/
 
 header{
-    background-color: rgb(56, 96, 76);
+    background-color:$color2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,7 +24,6 @@ nav ul li{
     font-weight: 500;
     
     &:hover{
-        background-color: rgb(47, 84, 66);
         border-radius: 5%;
     }
 }

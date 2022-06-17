@@ -1,3 +1,5 @@
+/*Formulario*/
+
 .contenedor2{
     background-image: 
     url("../multimedia/Fondo1.jpg");
@@ -9,9 +11,9 @@
 
 form{
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(65, 62, 62); 
+    background-color:$color1;
     font-weight: 500;
-    color: white;
+    color:$color4;
     margin: 0% 15% 0% 15%;
 }
 
@@ -23,7 +25,7 @@ form div{
 
 textarea{
     font-family: 'Montserrat', sans-serif;
-    color: grey;
+    color:$color5;
     padding: 1rem;
 }
 

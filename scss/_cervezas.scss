@@ -1,3 +1,5 @@
+/*Cervezas*/
+
 .contCervezas{
     background-image: 
     url("../multimedia/Fondo3.jpg");
@@ -7,7 +9,7 @@
     padding: 5% 18% 5% 18%;
 
     p{
-        color: white;
+        color:$color4;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
@@ -24,7 +26,7 @@
 .accordion-body{
 
     p{
-        color: rgb(51, 51, 51);
+        color:$color2;
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -32,7 +34,7 @@
     }
 
     .propiedades{
-        color: rgb(197, 161, 111);
+        color:$color3;
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;

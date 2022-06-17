@@ -1,8 +1,13 @@
 /*GRILLA catalogo de comida*/
 
+$fondos: (
+    fondo1:$color1,
+    fondo2:$color2,
+    fondo3:$color3
+);
+
 .menu{
     grid-area: menu; 
-    color: white;
 }
 
 .contenedor{
@@ -24,265 +29,156 @@
     "footer footer footer";
 }
 
-.pizzas{
-    grid-area: pizzas;
-    background-image: 
-    url('../multimedia/Pizzas.png');
+@mixin menu1 {
     background-size: cover;
     background-repeat: no-repeat;  
     background-position: center;   
-    background-color: rgb(51, 51, 51);
+    background-color:$color1;
     display: flex;
     justify-content: center;
     align-items: center;
     
     &:hover{
-        background-color: rgb(32, 32, 32);
+        background-color:$color6;
     }
 
     a{
         text-decoration: none;
     }
+}
+
+.pizzas{
+    grid-area: pizzas;
+    background-image: 
+    url('../multimedia/Pizzas.png');
+    @include menu1;
 }
 
 .hamburguesas{
     grid-area: hamburguesas;
     background-image: 
     url('../multimedia/Hamburguesas.png');
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;   
-    background-color: rgb(51, 51, 51);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &:hover{
-        background-color: rgb(32, 32, 32);
-    }
-
-    a{
-        text-decoration: none;
-    }
+    @include menu1;
 }
 
 .milanesas{
     grid-area: milanesas;
     background-image: 
     url('../multimedia/Milanesas.png');
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;   
-    background-color: rgb(51, 51, 51);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &:hover{
-        background-color: rgb(32, 32, 32);
-    }
-
-    a{
-        text-decoration: none;
-    }
+    @include menu1;
 }
 
 .sandwiches{
     grid-area: sandwiches;
     background-image: 
     url('../multimedia/Sandwiches.png');
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;   
-    background-color: rgb(51, 51, 51);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &:hover{
-        background-color: rgb(32, 32, 32);
-    }
-
-    a{
-        text-decoration: none;
-    }
+    @include menu1;
 }
 
 .papasFritas{
     grid-area: papasFritas;
     background-image: 
     url('../multimedia/Papas.png');
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;   
-    background-color: rgb(51, 51, 51);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &:hover{
-        background-color: rgb(32, 32, 32);
-    }
-
-    a{
-        text-decoration: none;
-    }
+    @include menu1;
 }
 
 .empanadas{
     grid-area: empanadas;
     background-image: 
     url('../multimedia/Empanadas.png');
+    @include menu1;
+}
+
+@mixin menu2 {
     background-size: cover;
     background-repeat: no-repeat;  
-    background-position: center;   
-    background-color: rgb(51, 51, 51);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &:hover{
-        background-color: rgb(32, 32, 32);
+    background-position: center;
+    text-align: center;
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
 
-    a{
-        text-decoration: none;
+    p{
+        font-size: 1rem;
+        font-weight: 300;
     }
 }
 
 .pizzas1{
-    background-color: rgb(197, 161, 111);
+    @include menu2;
+    background-color:map-get($map: $fondos, $key: fondo3);
     grid-area: pizzas1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
     background-image: url('../multimedia/Pizzas.png');
-    text-align: center;
 
     ul{
-        list-style-type: none;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: rgb(51, 51, 51);
+        color:$color1;
     }
 }
 
 .hamburguesas1{
-    background-color: rgb(51, 51, 51);
+    @include menu2;
+    background-color:map-get($map: $fondos, $key: fondo1);
     grid-area: hamburguesas1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
     background-image: url('../multimedia/Hamburguesas.png');
-    text-align: center;
 
     h2{
-        color: rgb(197, 161, 111);
+        color:$color3;
     }
     
     ul{
-        list-style-type: none;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-    }
-    
-    p{
-        font-size: 1rem;
-        font-weight: 300;
+        color:$color4;
     }
 }
 
 .milanesas1{
-    background-color: rgb(47, 84, 66);
+    @include menu2;
+    background-color:map-get($map: $fondos, $key: fondo2);
     grid-area: milanesas1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
     background-image: url('../multimedia/Milanesas.png');
-    text-align: center;
     
     ul{
-        list-style-type: none;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: rgb(255, 255, 255);
-    }
-
-    p{
-        font-size: 1rem;
-        font-weight: 300;
+        color:$color4;
     }
 }
 
 .sandwiches1{
-    background-color: rgb(51, 51, 51);
+    @include menu2;
+    background-color:map-get($map: $fondos, $key: fondo1);
     grid-area: sandwiches1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
     background-image: url('../multimedia/Sandwiches.png');
-    text-align: center;
 
     h2{
-        color: rgb(197, 161, 111);
+        color:$color3;
     }
     
     ul{
-        list-style-type: none;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-    }
-
-    p{
-        font-size: 1rem;
-        font-weight: 300;
+        color:$color4;
     }
 }
 
 .papasFritas1{
-    background-color: rgb(197, 161, 111);
+    @include menu2;
+    background-color:map-get($map: $fondos, $key: fondo3);
     grid-area: papasFritas1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
     background-image: url('../multimedia/Papas.png');
-    text-align: center;
     
     ul{
-        list-style-type: none;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: rgb(51, 51, 51);
+        color:$color1;
     }
 }
 
 .empanadas1{
-    background-color: rgb(47, 84, 66);
+    @include menu2;
+    background-color:map-get($map: $fondos, $key: fondo2);
     grid-area: empanadas1;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    background-position: center;
     background-image: url('../multimedia/Empanadas.png');
-    text-align: center;
     
     ul{
-        list-style-type: none;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: rgb(255, 255, 255);
+        color:$color4;
     }
 }

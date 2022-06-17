@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /*Header*/
 header {
-  background-color: #38604c;
+  background-color: #37604c;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,32 +20,28 @@ nav ul li {
   font-size: 1.2rem;
   font-weight: 500; }
   nav ul li:hover {
-    background-color: #2f5442;
     border-radius: 5%; }
 
+/*Títulos*/
 h1, .titulosMonserrat {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 200;
-  color: white;
+  color: #ede8d7;
   text-align: center;
-  background-color: #272727;
+  background-color: #333333;
   margin: 0; }
 
-h2 {
+h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 600;
-  color: white;
+  color: #ede8d7;
   margin: 0;
   padding: 1% 0 1% 0; }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: white;
-  margin: 0; }
+  font-weight: 500; }
   h3:hover {
     font-weight: 700;
     font-size: 2.2rem; }
@@ -56,15 +53,13 @@ h4 {
   color: #333333;
   margin: 0; }
 
-h5 {
-  font-family: 'Montserrat', sans-serif; }
-
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: white;
   margin: 0; }
 
+/*Inicio*/
 .contLogo {
   display: flex;
   justify-content: center;
@@ -84,8 +79,7 @@ h6 {
 
 /*GRILLA catalogo de comida*/
 .menu {
-  grid-area: menu;
-  color: white; }
+  grid-area: menu; }
 
 .contenedor {
   height: 100vh;
@@ -105,7 +99,7 @@ h6 {
   justify-content: center;
   align-items: center; }
   .pizzas:hover {
-    background-color: #202020; }
+    background-color: #1f1f1f; }
   .pizzas a {
     text-decoration: none; }
 
@@ -120,7 +114,7 @@ h6 {
   justify-content: center;
   align-items: center; }
   .hamburguesas:hover {
-    background-color: #202020; }
+    background-color: #1f1f1f; }
   .hamburguesas a {
     text-decoration: none; }
 
@@ -135,7 +129,7 @@ h6 {
   justify-content: center;
   align-items: center; }
   .milanesas:hover {
-    background-color: #202020; }
+    background-color: #1f1f1f; }
   .milanesas a {
     text-decoration: none; }
 
@@ -150,7 +144,7 @@ h6 {
   justify-content: center;
   align-items: center; }
   .sandwiches:hover {
-    background-color: #202020; }
+    background-color: #1f1f1f; }
   .sandwiches a {
     text-decoration: none; }
 
@@ -165,7 +159,7 @@ h6 {
   justify-content: center;
   align-items: center; }
   .papasFritas:hover {
-    background-color: #202020; }
+    background-color: #1f1f1f; }
   .papasFritas a {
     text-decoration: none; }
 
@@ -180,119 +174,135 @@ h6 {
   justify-content: center;
   align-items: center; }
   .empanadas:hover {
-    background-color: #202020; }
+    background-color: #1f1f1f; }
   .empanadas a {
     text-decoration: none; }
 
 .pizzas1 {
-  background-color: #c5a16f;
-  grid-area: pizzas1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../multimedia/Pizzas.png");
-  text-align: center; }
+  text-align: center;
+  background-color: #c5a16f;
+  grid-area: pizzas1;
+  background-image: url("../multimedia/Pizzas.png"); }
   .pizzas1 ul {
     list-style-type: none;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 400; }
+  .pizzas1 p {
+    font-size: 1rem;
+    font-weight: 300; }
+  .pizzas1 ul {
     color: #333333; }
 
 .hamburguesas1 {
-  background-color: #333333;
-  grid-area: hamburguesas1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../multimedia/Hamburguesas.png");
-  text-align: center; }
-  .hamburguesas1 h2 {
-    color: #c5a16f; }
+  text-align: center;
+  background-color: #333333;
+  grid-area: hamburguesas1;
+  background-image: url("../multimedia/Hamburguesas.png"); }
   .hamburguesas1 ul {
     list-style-type: none;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
-    color: white; }
+    font-weight: 400; }
   .hamburguesas1 p {
     font-size: 1rem;
     font-weight: 300; }
+  .hamburguesas1 h2, .hamburguesas1 h3 {
+    color: #c5a16f; }
+  .hamburguesas1 ul {
+    color: #ede8d7; }
 
 .milanesas1 {
-  background-color: #2f5442;
-  grid-area: milanesas1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../multimedia/Milanesas.png");
-  text-align: center; }
+  text-align: center;
+  background-color: #37604c;
+  grid-area: milanesas1;
+  background-image: url("../multimedia/Milanesas.png"); }
   .milanesas1 ul {
     list-style-type: none;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
-    color: white; }
+    font-weight: 400; }
   .milanesas1 p {
     font-size: 1rem;
     font-weight: 300; }
+  .milanesas1 ul {
+    color: #ede8d7; }
 
 .sandwiches1 {
-  background-color: #333333;
-  grid-area: sandwiches1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../multimedia/Sandwiches.png");
-  text-align: center; }
-  .sandwiches1 h2 {
-    color: #c5a16f; }
+  text-align: center;
+  background-color: #333333;
+  grid-area: sandwiches1;
+  background-image: url("../multimedia/Sandwiches.png"); }
   .sandwiches1 ul {
     list-style-type: none;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
-    color: white; }
+    font-weight: 400; }
   .sandwiches1 p {
     font-size: 1rem;
     font-weight: 300; }
+  .sandwiches1 h2, .sandwiches1 h3 {
+    color: #c5a16f; }
+  .sandwiches1 ul {
+    color: #ede8d7; }
 
 .papasFritas1 {
-  background-color: #c5a16f;
-  grid-area: papasFritas1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../multimedia/Papas.png");
-  text-align: center; }
+  text-align: center;
+  background-color: #c5a16f;
+  grid-area: papasFritas1;
+  background-image: url("../multimedia/Papas.png"); }
   .papasFritas1 ul {
     list-style-type: none;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 400; }
+  .papasFritas1 p {
+    font-size: 1rem;
+    font-weight: 300; }
+  .papasFritas1 ul {
     color: #333333; }
 
 .empanadas1 {
-  background-color: #2f5442;
-  grid-area: empanadas1;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../multimedia/Empanadas.png");
-  text-align: center; }
+  text-align: center;
+  background-color: #37604c;
+  grid-area: empanadas1;
+  background-image: url("../multimedia/Empanadas.png"); }
   .empanadas1 ul {
     list-style-type: none;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    font-weight: 400;
-    color: white; }
+    font-weight: 400; }
+  .empanadas1 p {
+    font-size: 1rem;
+    font-weight: 300; }
+  .empanadas1 ul {
+    color: #ede8d7; }
 
+/*Cervezas*/
 .contCervezas {
   background-image: url("../multimedia/Fondo3.jpg");
   background-size: cover;
@@ -300,7 +310,7 @@ h6 {
   background-position: center;
   padding: 5% 18% 5% 18%; }
   .contCervezas p {
-    color: white;
+    color: #ede8d7;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -312,7 +322,7 @@ h6 {
   align-content: center; }
 
 .accordion-body p {
-  color: #333333;
+  color: #37604c;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
@@ -323,6 +333,7 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; }
 
+/*Formulario*/
 .contenedor2 {
   background-image: url("../multimedia/Fondo1.jpg");
   background-size: cover;
@@ -332,9 +343,9 @@ h6 {
 
 form {
   font-family: 'Montserrat', sans-serif;
-  background-color: #413e3e;
+  background-color: #333333;
   font-weight: 500;
-  color: white;
+  color: #ede8d7;
   margin: 0% 15% 0% 15%; }
 
 form div {
@@ -344,7 +355,7 @@ form div {
 
 textarea {
   font-family: 'Montserrat', sans-serif;
-  color: grey;
+  color: #606060;
   padding: 1rem; }
 
 .formulario2 {
@@ -352,6 +363,7 @@ textarea {
   flex-direction: row;
   justify-content: space-between; }
 
+/*Footer*/
 footer {
   background-color: #333333;
   display: flex;
@@ -377,6 +389,7 @@ footer {
 .ig:hover {
   opacity: 0.5; }
 
+/*Medias*/
 @media screen and (max-width: 992px) {
   .header {
     display: flex;

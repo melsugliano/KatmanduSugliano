@@ -1,5 +1,7 @@
+/*Footer*/
+
 footer{
-    background-color: rgb(51, 51, 51);
+    background-color:$color1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,7 +18,7 @@ footer{
 .footerText{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
-    color: white;
+    color:white;
 }
 
 /*ANIMACIONES footer*/
