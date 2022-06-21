@@ -1,9 +1,13 @@
+/*variables SASS*/
+
 $color1:#333333;
 $color2:#37604c;
 $color3:#c5a16f;
 $color4:#ede8d7;
 $color5:#606060;
 $color6:#1f1f1f;
+
+/*import archivos SCSS*/
 
 @import "header";
 @import "titulos";
@@ -13,6 +17,8 @@ $color6:#1f1f1f;
 @import "reservas";
 @import "footer";
 @import "medias";
+
+/*universal*/
 
 *{
     margin: 0;

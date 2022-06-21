@@ -9,7 +9,7 @@
     padding: 5% 18% 5% 18%;
 
     p{
-        color:$color4;
+        color:white;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
@@ -24,19 +24,17 @@
 }
 
 .accordion-body{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 
     p{
-        color:$color2;
-        font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
+        color:$color2;  
         font-weight: 400;
 
     }
 
     .propiedades{
         color:$color3;
-        font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
         font-weight: 600;
     }
 }

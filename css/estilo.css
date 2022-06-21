@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*variables SASS*/
+/*import archivos SCSS*/
 /*Header*/
 header {
   background-color: #37604c;
@@ -310,7 +312,7 @@ h6 {
   background-position: center;
   padding: 5% 18% 5% 18%; }
   .contCervezas p {
-    color: #ede8d7;
+    color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -321,17 +323,15 @@ h6 {
   flex-direction: row;
   align-content: center; }
 
-.accordion-body p {
-  color: #37604c;
+.accordion-body {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400; }
-
-.accordion-body .propiedades {
-  color: #c5a16f;
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600; }
+  font-family: 'Montserrat', sans-serif; }
+  .accordion-body p {
+    color: #37604c;
+    font-weight: 400; }
+  .accordion-body .propiedades {
+    color: #c5a16f;
+    font-weight: 600; }
 
 /*Formulario*/
 .contenedor2 {
@@ -345,7 +345,7 @@ form {
   font-family: 'Montserrat', sans-serif;
   background-color: #333333;
   font-weight: 500;
-  color: #ede8d7;
+  color: white;
   margin: 0% 15% 0% 15%; }
 
 form div {
@@ -448,6 +448,7 @@ footer {
   .footerText {
     font-size: 0.5rem; } }
 
+/*universal*/
 * {
   margin: 0;
   padding: 0; }
