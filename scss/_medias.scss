@@ -40,6 +40,7 @@
     }
 
     .contCervezas{
+        padding: 5% 15% 5% 15%;
 
         p{
             font-size: 1rem;
@@ -66,6 +67,8 @@
     .footerText{
         font-size: 0.6rem;
     }
+    
+   
 }
 
 @media screen and (max-width:768px){
@@ -137,4 +140,32 @@
     .footerText{
         font-size: 0.5rem;
     }
+
+    .accordion-collapse {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pizzas1, .hamburguesas1, .sandwiches1, .milanesas1, .papasFritas1, .empanadas1 {
+        padding: 15% 0 15% 0 !important;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1280px){
+    .instagram-media{ 
+        min-width: 240px !important;
+        max-width: 240px !important; 
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 767px){
+    .instagram-media{ 
+        min-width: 326px !important;
+        max-width: 480px !important; 
+    }
+   
 }

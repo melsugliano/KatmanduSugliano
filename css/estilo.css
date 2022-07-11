@@ -24,12 +24,16 @@ nav ul li {
   nav ul li:hover {
     border-radius: 5%; }
 
+.navbar-toggler {
+  border: 0 !important;
+  box-shadow: unset !important; }
+
 /*Títulos*/
 h1, .titulosMonserrat {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 200;
-  color: #ede8d7;
+  color: white;
   text-align: center;
   background-color: #333333;
   margin: 0; }
@@ -103,7 +107,8 @@ h6 {
   .pizzas:hover {
     background-color: #1f1f1f; }
   .pizzas a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 11% 0 11% 0; }
 
 .hamburguesas {
   grid-area: hamburguesas;
@@ -118,7 +123,8 @@ h6 {
   .hamburguesas:hover {
     background-color: #1f1f1f; }
   .hamburguesas a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 11% 0 11% 0; }
 
 .milanesas {
   grid-area: milanesas;
@@ -133,7 +139,8 @@ h6 {
   .milanesas:hover {
     background-color: #1f1f1f; }
   .milanesas a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 11% 0 11% 0; }
 
 .sandwiches {
   grid-area: sandwiches;
@@ -148,7 +155,8 @@ h6 {
   .sandwiches:hover {
     background-color: #1f1f1f; }
   .sandwiches a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 11% 0 11% 0; }
 
 .papasFritas {
   grid-area: papasFritas;
@@ -163,7 +171,8 @@ h6 {
   .papasFritas:hover {
     background-color: #1f1f1f; }
   .papasFritas a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 11% 0 11% 0; }
 
 .empanadas {
   grid-area: empanadas;
@@ -178,13 +187,15 @@ h6 {
   .empanadas:hover {
     background-color: #1f1f1f; }
   .empanadas a {
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 11% 0 11% 0; }
 
 .pizzas1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding: 3% 0 3% 0;
   background-color: #c5a16f;
   grid-area: pizzas1;
   background-image: url("../multimedia/Pizzas.png"); }
@@ -194,9 +205,12 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
+  .pizzas1 h2, .pizzas1 h3 {
+    padding-bottom: 2rem; }
   .pizzas1 p {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 0 10% 0 10%; }
   .pizzas1 ul {
     color: #333333; }
 
@@ -205,6 +219,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding: 3% 0 3% 0;
   background-color: #333333;
   grid-area: hamburguesas1;
   background-image: url("../multimedia/Hamburguesas.png"); }
@@ -214,9 +229,12 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
+  .hamburguesas1 h2, .hamburguesas1 h3 {
+    padding-bottom: 2rem; }
   .hamburguesas1 p {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 0 10% 0 10%; }
   .hamburguesas1 h2, .hamburguesas1 h3 {
     color: #c5a16f; }
   .hamburguesas1 ul {
@@ -227,6 +245,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding: 3% 0 3% 0;
   background-color: #37604c;
   grid-area: milanesas1;
   background-image: url("../multimedia/Milanesas.png"); }
@@ -236,9 +255,12 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
+  .milanesas1 h2, .milanesas1 h3 {
+    padding-bottom: 2rem; }
   .milanesas1 p {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 0 10% 0 10%; }
   .milanesas1 ul {
     color: #ede8d7; }
 
@@ -247,6 +269,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding: 3% 0 3% 0;
   background-color: #333333;
   grid-area: sandwiches1;
   background-image: url("../multimedia/Sandwiches.png"); }
@@ -256,9 +279,12 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
+  .sandwiches1 h2, .sandwiches1 h3 {
+    padding-bottom: 2rem; }
   .sandwiches1 p {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 0 10% 0 10%; }
   .sandwiches1 h2, .sandwiches1 h3 {
     color: #c5a16f; }
   .sandwiches1 ul {
@@ -269,6 +295,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding: 3% 0 3% 0;
   background-color: #c5a16f;
   grid-area: papasFritas1;
   background-image: url("../multimedia/Papas.png"); }
@@ -278,9 +305,12 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
+  .papasFritas1 h2, .papasFritas1 h3 {
+    padding-bottom: 2rem; }
   .papasFritas1 p {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 0 10% 0 10%; }
   .papasFritas1 ul {
     color: #333333; }
 
@@ -289,6 +319,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  padding: 3% 0 3% 0;
   background-color: #37604c;
   grid-area: empanadas1;
   background-image: url("../multimedia/Empanadas.png"); }
@@ -298,25 +329,29 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
+  .empanadas1 h2, .empanadas1 h3 {
+    padding-bottom: 2rem; }
   .empanadas1 p {
     font-size: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    padding: 0 10% 0 10%; }
   .empanadas1 ul {
     color: #ede8d7; }
 
 /*Cervezas*/
 .contCervezas {
-  background-image: url("../multimedia/Fondo3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url("../multimedia/Fondo3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 5% 18% 5% 18%; }
+  padding: 5% 25% 5% 25%; }
   .contCervezas p {
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400; }
+    font-weight: 400;
+    padding: 1% 0 1% 0; }
 
 .accordion-collapse {
   display: flex;
@@ -405,8 +440,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto repeat(9, 1fr) auto;
     grid-template-areas: "header header" "menu menu" "pizzas hamburguesas"  "milanesas sandwiches"  "papasFritas empanadas" "pizzas1 pizzas1" "hamburguesas1 hamburguesas1" "milanesas1 milanesas1" "sandwiches1 sandwiches1" "empanadas1 empanadas1" "papasFritas1 papasFritas1" "footer footer "; }
-  .contCervezas p {
-    font-size: 1rem; }
+  .contCervezas {
+    padding: 5% 15% 5% 15%; }
+    .contCervezas p {
+      font-size: 1rem; }
   .contenedor2 {
     padding: 5% 5% 5% 5%; }
   form {
@@ -446,7 +483,47 @@ footer {
   h6 {
     font-size: 0.8rem; }
   .footerText {
-    font-size: 0.5rem; } }
+    font-size: 0.5rem; }
+  .accordion-collapse {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+  .pizzas1, .hamburguesas1, .sandwiches1, .milanesas1, .papasFritas1, .empanadas1 {
+    padding: 15% 0 15% 0 !important; } }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .instagram-media {
+    min-width: 240px !important;
+    max-width: 240px !important; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .instagram-media {
+    min-width: 326px !important;
+    max-width: 480px !important; } }
+
+.eventos {
+  background-image: url("../multimedia/Fondo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .eventos .carousel-inner {
+    padding: 5% 0 5% 0; }
+  .eventos .contenedorIg {
+    padding: 10% 1% 0 0; }
+  .eventos .instagram-media {
+    background: #FFF;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 1px;
+    max-width: 480px;
+    min-width: 326px;
+    padding: 0;
+    width: 99.375%;
+    width: -webkit-calc(100% - 2px);
+    width: calc(100% - 2px); }
 
 /*universal*/
 * {

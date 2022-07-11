@@ -44,6 +44,7 @@ $fondos: (
 
     a{
         text-decoration: none;
+        padding: 11% 0 11% 0;
     }
 }
 
@@ -94,6 +95,7 @@ $fondos: (
     background-repeat: no-repeat;  
     background-position: center;
     text-align: center;
+    padding: 3% 0 3% 0;
 
     ul{
         list-style-type: none;
@@ -103,9 +105,14 @@ $fondos: (
         font-weight: 400;
     }
 
+    h2{
+        padding-bottom: 2rem;
+    }
+
     p{
         font-size: 1rem;
         font-weight: 300;
+        padding: 0 10% 0 10%;
     }
 }
 
